@@ -9,23 +9,31 @@
 
   <!-- Vendor -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
 
   <!-- Custom -->
   <link rel="stylesheet" href="css/master.css">
 </head>
 
 <body>
-  <button id="myBtn">Open Modal</button>
-  <div id="myModal" class="modal">
+  <div class="header">
+    <h1>Lily's Recipes</h1>
+  </div>
+  <div id="myModal" class="modal" target="recipe_1">
 
     <div class="modal-content">
-      <div class="modal-header">
-        <span class="close">&times;</span>
-        <h2>Modal Header</h2>
-      </div>
+      <img src="img/default.png" alt="" class="modal-img">
+      <span class="close">&times;</span>
+      <span class="modal-header">Recipe 2</span>
       <div class="modal-body">
-        <p>Some text in the Modal Body</p>
-        <p>Some other text...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio modi numquam, porro enim illo omnis atque a incidunt molestiae recusandae. Dolore quis nihil, amet ea nostrum perferendis, quia cupiditate alias odio, tenetur adipisci
+          quasi nulla esse. Velit voluptatibus, vitae in?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolore, commodi rerum harum. Suscipit praesentium nam ipsum minima vel quae.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fugiat, libero enim non expedita voluptatibus veritatis dignissimos molestias repudiandae mollitia nihil corporis cum accusamus beatae at, architecto facere in. Aspernatur.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci libero suscipit cupiditate nostrum, fuga rem, iusto, delectus numquam quis quaerat quo excepturi nulla error tenetur, voluptatibus molestiae. Quia nemo perferendis id quae
+          deleniti eligendi libero dolorem iusto, non autem ad enim quis dolorum necessitatibus corporis deserunt incidunt magni porro nulla! Iure, eligendi laborum dignissimos? Doloribus illo, fugiat officia est earum ipsam, sed blanditiis sit amet
+          neque a dolores eum magnam nam molestiae. Voluptatem maxime, architecto repellat, aut at totam similique quo saepe, quam soluta necessitatibus, dolorem reiciendis consequatur assumenda ducimus! Nesciunt, architecto? Voluptate perferendis
+          quasi, officiis quaerat asperiores dicta quae?</p>
       </div>
       <div class="modal-footer">
         <h3>Modal Footer</h3>
@@ -34,11 +42,11 @@
   </div>
 
   <div class="cards">
-    <div class="card">
+    <div class="card" id="recipe_1">
       <div class="card-container">
         <img src="img/default.png" alt="" class="card-img">
         <div class="card-detail">
-          <h1 class="card-title" id="title1">Title</h1>
+          <span class="card-title">Title 1</span>
           <p class="card-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem laboriosam, iste deserunt vel perferendis amet. Eos neque asperiores sapiente esse nisi, voluptatem, assumenda soluta! Dignissimos quidem delectus
             commodi
             debitis facilis doloribus dolores quisquam eveniet enim, quas consequuntur reprehenderit quae vel.</p>

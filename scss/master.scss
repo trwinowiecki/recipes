@@ -3,15 +3,37 @@ $font-lobster: 'Lobster', cursive;
 $border-radius: 10px;
 $color-mint: #6eecb8;
 
+$breakpoint-lg: "only screen and (min-width : 1000px)";
+$breakpoint-sm: "only screen and (max-width : 550px)";
+
 body {
   font-family: $font-roboto;
 }
 
 .header {
+  position: relative;
   text-align: center;
   font-family: $font-lobster;
   font-size: 1.5em;
   font-weight: normal;
+
+  .search {
+    position: absolute;
+    top: calc(50% - .75em);
+    right: 10px;
+    width: 25%;
+
+    @media #{$breakpoint-sm} {
+      position: relative;
+    }
+
+    input {
+      line-height: 1.5em;
+      height: 1.5em;
+      width: 100%;
+      border-radius: 1.5em;
+    }
+  }
 }
 
 .cards {
@@ -100,6 +122,11 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
     animation-duration: 0.4s;
+
+    @media #{$breakpoint-lg} {
+      margin-left: calc((100% - 900px) / 2);
+      max-width: 900px;
+    }
   }
   /* The Close Button */
   .close {

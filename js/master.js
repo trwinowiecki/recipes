@@ -90,10 +90,12 @@ $('.modal').each((index, element) => {
   close.on('click', (event) => {
     element.style.display = "none";
   });
-
-  window.onclick = (event) => {
-    if (event.target == element) {
-      element.style.display = "none";
-    }
-  }
 });
+
+window.onclick = (event) => {
+  if (event.target.className == 'modal') {
+    $('.modal').each((index, element) => {
+      element.style.display = "none";
+    });
+  }
+}
